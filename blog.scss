@@ -1,5 +1,5 @@
 $myFont: Raleway;
-$myColor: #ba7575;
+$myColor: #000;
 $myColor2: #ffff;
 $myColor3: #8a2be2;
 $myFontSize: 18px;
@@ -10,11 +10,6 @@ body {
   font-size: $myFontSize;
   color: $myColor;
 }
-
-#container {
-  width: $myWidth;
-}
-
 
  nav{
   text-align: center;

@@ -4,6 +4,7 @@
     
  body {
   background-color: #000;
+  overflow-x: hidden;
  }
 
  nav{
@@ -149,10 +150,6 @@ p{
   align-items: center;
 }
 
-.github{
-max-width: 40px;
-height: 40px;
-}
 
 footer {
   background-color: rgb(139, 140, 140);
@@ -160,11 +157,8 @@ footer {
   border-radius: 20px;
 }
 
-
-  }
-
-
- 
+}
+  
   @media screen and (min-width: 900px) {
     
  body {
