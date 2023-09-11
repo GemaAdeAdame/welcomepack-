@@ -1,85 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
-$myFont: Raleway;
+$myFont: 'Raleway', sans-serif;
 $myColor: #000;
 $myColor2: #ffff;
 $myColor3: #8a2be2;
 $myFontSize: 18px;
 $myColor4: #989c9c;
 
+// Estilos compartidos entre versiones mobile y desktop
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  background-color: $myColor;
+}
 
-//versión mobile first
-@media screen and (min-width: 480px) {
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
 
-  body {
-    font-family: $myFont;
-    font-size: $myFontSize;
-    background-color: $myColor;
+a,
+h1 {
+  color: $myColor2;
+  text-align: center;
+}
+
+a {
+  justify-content: center;
+  text-decoration: none;
+
+  &:hover {
+    color: $myColor3;
   }
+}
 
-  nav {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10%;
-  }
-
-  a,
-  h1 {
-    color: $myColor2;
-    text-align: center;
-  }
-
-  
-
-  header {
-
-    .header__title,
-    h1 {
-      font-weight: bold;
-      font-size: 60px;
-      text-align: center;
-      font-family: 'Raleway';
-      margin-bottom: 2px;
-      color: $myColor2;
-    }
-
-    .header__title:hover {
-      color: $myColor3;
-    }
-    .header__logo {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  a {
-    justify-content: center;
-    text-decoration: none;
-    font-family: 'Raleway';
-
-    &:hover {
-      color: $myColor3;
-    }
-  }
-
-
-  .section__image {
-    height: 400px;
-    margin: 0 auto;
-  }
-
-  section {
-
-    background-color: $myColor4;
-    color: $myColor;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-    margin: 10px;
-    border-radius: 20px;
-  }
+section {
+  background-color: $myColor4;
+  color: $myColor;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px;
+  margin: 10px;
+  border-radius: 20px;
 
   .section__line {
     width: 10px;
@@ -99,241 +64,82 @@ $myColor4: #989c9c;
   }
 }
 
-
 p {
   text-align: center;
   color: $myColor2;
   font-size: 12px;
 }
+  // Estilos específicos para la versión desktop
 
 
-
-
-section {
-
-  .section__container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .section__image {
-    max-width: 40%;
-    height: auto;
-    transition: background-color 0.3s;
-    transition: transform 0.3s, filter 0.3s;
-  }
-
-  .section_image:hover {
-    transform: scale(1.1);
-    filter: brightness(0.5);
-
-  }
-
-  .a .section__link--info, .section__link--buy {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-
-  .section__link {
-    text-align: center;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 8%;
-    padding: 20px;
-    font-size: 12px;
-
-  }
-
-  .section__link--info, .section__link--buy {
-    background-color: $myColor;
-    border-radius: 20px;
-    padding: 12px;
-    color: $myColor2;
-    font-weight: bold;
-    font-family: 'Raleway';
-  }
-
-  .section__link--info, .section__link--buy:hover {
-    color: #000;
-    background-color: #8a2be2;
-    font-weight: bold;
-  }
-
-  .section__link .a {
-    text-align: center;
-  }
-}
-
-footer {
-  background-color: $myColor4;
-  padding: 10px;
-  border-radius: 20px;
-  margin: 10px;
-}
-
-
-//versión desktop
-@media screen and (min-width: 700px) {
-  body {
-    font-family: $myFont;
-    font-size: $myFontSize;
-    background-color: $myColor;
-  }
-
-  nav {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10%;
-  }
-
-  a,
-  h1 {
-    color: $myColor2;
-    text-align: center;
-  }
-
-  .logoapple {
-    width: 40px;
-    height: 40px;
-  }
-
+// Estilos específicos para la versión mobile
+@media screen and (max-width: 699px) {
   header {
-
-    .titulo-header,
-    h1 {
+    .header__title {
       font-weight: bold;
       font-size: 60px;
       text-align: center;
-      font-family: 'Raleway';
       margin-bottom: 2px;
       color: $myColor2;
-    }
 
-    .titulo-header:hover {
-      color: $myColor3;
-    }
+      &:hover {
+        color: $myColor3;
+      }
 
-  }
-
-  a {
-    justify-content: center;
-    text-decoration: none;
-    font-family: 'Raleway';
-
-    &:hover {
-      color: $myColor3;
+      .header__logo {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
-
-  .img-iphone {
+  .section__image {
     height: 400px;
     margin: 0 auto;
+    transition: background-color 0.3s, transform 0.3s, filter 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: brightness(0.5);
+    }
   }
 
-  section {
-
-    background-color: $myColor4;
-    color: $myColor;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-    margin: 10px;
-    border-radius: 20px;
-  }
-
-  .line {
-    width: 10px;
-    height: 10px;
-  }
-
-  .p {
-    color: $myColor;
-  }
-
-  .soporte {
-    color: $myColor;
-  }
-
-  .soporte:hover {
-    color: $myColor3;
-  }
-}
-
-
-p {
-  text-align: center;
-  color: $myColor2;
-  font-size: 20px;
-}
-
-
-
-
-section {
-
-  .contenedor {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .img-iphone {
-    max-width: 40%;
-    height: auto;
-    transition: background-color 0.3s;
-    transition: transform 0.3s, filter 0.3s;
-  }
-
-  .img-iphone:hover {
-    transform: scale(1.1);
-    filter: brightness(0.5);
-
-  }
-
-  .a .enlace {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-
-  .enlace {
-    text-align: center;
+  .section__links {
     text-align: center;
     display: flex;
     justify-content: space-between;
-    margin: 0 8%;
+    margin: 0 12%;
     padding: 20px;
-    font-size: 20px;
-
-  }
-
-  .enlace1 {
-    background-color: $myColor;
-    border-radius: 20px;
-    padding: 12px;
-    color: $myColor2;
-    font-weight: bold;
-    font-family: 'Raleway';
-  }
-
-  .enlace1:hover {
-    color: #000;
-    background-color: #8a2be2;
-    font-weight: bold;
-  }
-
-  .section .a {
-    text-align: center;
-  }
+    font-size: 12px;
 }
+    .section__link--info{
+      background-color: $myColor;
+      border-radius: 20px;
+      padding: 12px;
+      color: $myColor2;
+      font-weight: bold;
+      font-family: $myFont;
 
-footer {
-  background-color: $myColor4;
-  padding: 10px;
-  border-radius: 20px;
-  margin: 10px;
-}
+      &:hover {
+        color: #000;
+        background-color: $myColor3;
+    }
+    
+    }
+    
+    
+    .section__link--buy {
+      background-color: $myColor;
+      border-radius: 20px;
+      padding: 12px;
+      color: $myColor2;
+      font-weight: bold;
+      font-family: $myFont;
+
+      &:hover {
+        color: #000;
+        background-color: $myColor3;
+      }
+    }
+  
+  }
