@@ -69,9 +69,11 @@ p {
   color: $myColor2;
   font-size: 12px;
 }
-  
+  // Estilos específicos para la versión desktop
 
 
+// Estilos específicos para la versión mobile
+@media screen and (max-width: 1800px) {
   header {
     .header__title {
       font-weight: bold;
@@ -85,8 +87,8 @@ p {
       }
 
       .header__logo {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
       }
     }
   }
@@ -109,7 +111,7 @@ p {
     margin: 0 12%;
     padding: 20px;
     font-size: 12px;
-}
+
     .section__link--info{
       background-color: $myColor;
       border-radius: 20px;
@@ -124,7 +126,6 @@ p {
     }
     
     }
-    
     .section__link--buy {
       background-color: $myColor;
       border-radius: 20px;
@@ -138,5 +139,5 @@ p {
         background-color: $myColor3;
       }
     }
-  
-  
+  }
+}
