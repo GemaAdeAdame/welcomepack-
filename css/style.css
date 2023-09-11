@@ -102,6 +102,22 @@ section .section__link {
   padding: 20px;
   font-size: 12px;
 }
+
+
+section .section__link--info, section .section__link--info {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-family: "Raleway";
+}
+section .section__link--info, section .section__link--info:hover {
+  color: #000;
+  background-color: #8a2be2;
+  font-weight: bold;
+}
+
 section .section__link--info, section .section__link--buy {
   background-color: #000;
   border-radius: 20px;

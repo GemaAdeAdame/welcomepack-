@@ -69,11 +69,9 @@ p {
   color: $myColor2;
   font-size: 12px;
 }
-  // Estilos específicos para la versión desktop
+  
 
 
-// Estilos específicos para la versión mobile
-@media screen and (max-width: 699px) {
   header {
     .header__title {
       font-weight: bold;
@@ -127,7 +125,6 @@ p {
     
     }
     
-    
     .section__link--buy {
       background-color: $myColor;
       border-radius: 20px;
@@ -142,4 +139,4 @@ p {
       }
     }
   
-  }
+  
