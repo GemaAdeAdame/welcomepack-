@@ -30,14 +30,11 @@ $myColor4: #989c9c;
     text-align: center;
   }
 
-  .logoapple {
-    width: 40px;
-    height: 40px;
-  }
+  
 
   header {
 
-    .titulo-header,
+    .header__title,
     h1 {
       font-weight: bold;
       font-size: 60px;
@@ -47,10 +44,13 @@ $myColor4: #989c9c;
       color: $myColor2;
     }
 
-    .titulo-header:hover {
+    .header__title:hover {
       color: $myColor3;
     }
-
+    .header__logo {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   a {
@@ -64,7 +64,7 @@ $myColor4: #989c9c;
   }
 
 
-  .img-iphone {
+  .section__image {
     height: 400px;
     margin: 0 auto;
   }
@@ -81,20 +81,20 @@ $myColor4: #989c9c;
     border-radius: 20px;
   }
 
-  .line {
+  .section__line {
     width: 10px;
     height: 10px;
   }
 
-  .p {
+  .section__paragraph {
     color: $myColor;
   }
 
-  .soporte {
+  .section__link--soporte {
     color: $myColor;
   }
 
-  .soporte:hover {
+  .section__link:hover {
     color: $myColor3;
   }
 }
@@ -111,31 +111,31 @@ p {
 
 section {
 
-  .contenedor {
+  .section__container {
     display: flex;
     justify-content: space-between;
   }
 
-  .img-iphone {
+  .section__image {
     max-width: 40%;
     height: auto;
     transition: background-color 0.3s;
     transition: transform 0.3s, filter 0.3s;
   }
 
-  .img-iphone:hover {
+  .section_image:hover {
     transform: scale(1.1);
     filter: brightness(0.5);
 
   }
 
-  .a .enlace {
+  .a .section__link--info, .section__link--buy {
     justify-content: center;
     text-align: center;
     align-items: center;
   }
 
-  .enlace {
+  .section__link {
     text-align: center;
     text-align: center;
     display: flex;
@@ -146,7 +146,7 @@ section {
 
   }
 
-  .enlace1 {
+  .section__link--info, .section__link--buy {
     background-color: $myColor;
     border-radius: 20px;
     padding: 12px;
@@ -155,13 +155,13 @@ section {
     font-family: 'Raleway';
   }
 
-  .enlace1:hover {
+  .section__link--info, .section__link--buy:hover {
     color: #000;
     background-color: #8a2be2;
     font-weight: bold;
   }
 
-  .section .a {
+  .section__link .a {
     text-align: center;
   }
 }

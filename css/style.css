@@ -16,11 +16,7 @@
     color: white;
     text-align: center;
   }
-  .logoapple {
-    width: 40px;
-    height: 40px;
-  }
-  header .titulo-header,
+  header .header__title,
   header h1 {
     font-weight: bold;
     font-size: 60px;
@@ -29,8 +25,12 @@
     margin-bottom: 2px;
     color: white;
   }
-  header .titulo-header:hover {
+  header .header__title:hover {
     color: #8a2be2;
+  }
+  header .header__logo {
+    width: 40px;
+    height: 40px;
   }
   a {
     justify-content: center;
@@ -40,7 +40,7 @@
   a:hover {
     color: #8a2be2;
   }
-  .img-iphone {
+  .section__image {
     height: 400px;
     margin: 0 auto;
   }
@@ -54,17 +54,17 @@
     margin: 10px;
     border-radius: 20px;
   }
-  .line {
+  .section__line {
     width: 10px;
     height: 10px;
   }
-  .p {
+  .section__paragraph {
     color: #000;
   }
-  .soporte {
+  .section__link--soporte {
     color: #000;
   }
-  .soporte:hover {
+  .section__link:hover {
     color: #8a2be2;
   }
 }
@@ -74,26 +74,26 @@ p {
   font-size: 12px;
 }
 
-section .contenedor {
+section .section__container {
   display: flex;
   justify-content: space-between;
 }
-section .img-iphone {
+section .section__image {
   max-width: 40%;
   height: auto;
   transition: background-color 0.3s;
   transition: transform 0.3s, filter 0.3s;
 }
-section .img-iphone:hover {
+section .section_image:hover {
   transform: scale(1.1);
   filter: brightness(0.5);
 }
-section .a .enlace {
+section .a .section__link--info, section .section__link--buy {
   justify-content: center;
   text-align: center;
   align-items: center;
 }
-section .enlace {
+section .section__link {
   text-align: center;
   text-align: center;
   display: flex;
@@ -102,7 +102,7 @@ section .enlace {
   padding: 20px;
   font-size: 12px;
 }
-section .enlace1 {
+section .section__link--info, section .section__link--buy {
   background-color: #000;
   border-radius: 20px;
   padding: 12px;
@@ -110,12 +110,12 @@ section .enlace1 {
   font-weight: bold;
   font-family: "Raleway";
 }
-section .enlace1:hover {
+section .section__link--info, section .section__link--buy:hover {
   color: #000;
   background-color: #8a2be2;
   font-weight: bold;
 }
-section .section .a {
+section .section__link .a {
   text-align: center;
 }
 
