@@ -74,7 +74,26 @@ p {
   font-size: 12px;
 }
 
-.enlace {
+section .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+section .img-iphone {
+  max-width: 40%;
+  height: auto;
+  transition: background-color 0.3s;
+  transition: transform 0.3s, filter 0.3s;
+}
+section .img-iphone:hover {
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+section .a .enlace {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+section .enlace {
   text-align: center;
   text-align: center;
   display: flex;
@@ -83,8 +102,7 @@ p {
   padding: 20px;
   font-size: 12px;
 }
-
-.enlace1 {
+section .enlace1 {
   background-color: #000;
   border-radius: 20px;
   padding: 12px;
@@ -92,38 +110,13 @@ p {
   font-weight: bold;
   font-family: "Raleway";
 }
-
-.enlace1:hover {
+section .enlace1:hover {
   color: #000;
   background-color: #8a2be2;
   font-weight: bold;
 }
-
-.section .a {
+section .section .a {
   text-align: center;
-}
-
-.contenedor {
-  display: flex;
-  justify-content: space-between;
-}
-
-.img-iphone {
-  max-width: 40%;
-  height: auto;
-  transition: background-color 0.3s;
-  transition: transform 0.3s, filter 0.3s;
-}
-
-.img-iphone:hover {
-  transform: scale(1.1);
-  filter: brightness(0.5);
-}
-
-.a .enlace {
-  justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 
 footer {
@@ -208,7 +201,26 @@ p {
   font-size: 20px;
 }
 
-.enlace {
+section .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+section .img-iphone {
+  max-width: 40%;
+  height: auto;
+  transition: background-color 0.3s;
+  transition: transform 0.3s, filter 0.3s;
+}
+section .img-iphone:hover {
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+section .a .enlace {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+section .enlace {
   text-align: center;
   text-align: center;
   display: flex;
@@ -217,8 +229,7 @@ p {
   padding: 20px;
   font-size: 20px;
 }
-
-.enlace1 {
+section .enlace1 {
   background-color: #000;
   border-radius: 20px;
   padding: 12px;
@@ -226,38 +237,13 @@ p {
   font-weight: bold;
   font-family: "Raleway";
 }
-
-.enlace1:hover {
+section .enlace1:hover {
   color: #000;
   background-color: #8a2be2;
   font-weight: bold;
 }
-
-.section .a {
+section .section .a {
   text-align: center;
-}
-
-.contenedor {
-  display: flex;
-  justify-content: space-between;
-}
-
-.img-iphone {
-  max-width: 40%;
-  height: auto;
-  transition: background-color 0.3s;
-  transition: transform 0.3s, filter 0.3s;
-}
-
-.img-iphone:hover {
-  transform: scale(1.1);
-  filter: brightness(0.5);
-}
-
-.a .enlace {
-  justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 
 footer {
