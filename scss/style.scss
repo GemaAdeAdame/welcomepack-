@@ -7,7 +7,9 @@ $myColor3: #8a2be2;
 $myFontSize: 18px;
 $myColor4: #989c9c;
 
-// Estilos compartidos entre versiones mobile y desktop
+// mobile first
+
+@media screen and (min-width: 480px) {
 body {
   font-family: $myFont;
   font-size: $myFontSize;
@@ -69,11 +71,9 @@ p {
   color: $myColor2;
   font-size: 12px;
 }
-  // Estilos específicos para la versión desktop
+  }
 
-
-// Estilos específicos para la versión mobile
-@media screen and (max-width: 699px) {
+@media screen and (min-width: 780px) {
   header {
     .header__title {
       font-weight: bold;
