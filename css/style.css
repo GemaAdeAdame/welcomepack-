@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@media screen and (min-width: 480px) {
+  body {
+    font-family: Raleway;
+    font-size: 18px;
+    background-color: #000;
+  }
+  nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+  }
+  a,
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  .logoapple {
+    width: 40px;
+    height: 40px;
+  }
+  header .titulo-header,
+  header h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Raleway";
+    margin-bottom: 2px;
+    color: white;
+  }
+  header .titulo-header:hover {
+    color: #8a2be2;
+  }
+  a {
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Raleway";
+  }
+  a:hover {
+    color: #8a2be2;
+  }
+  .img-iphone {
+    height: 400px;
+    margin: 0 auto;
+  }
+  section {
+    background-color: #989c9c;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .line {
+    width: 10px;
+    height: 10px;
+  }
+  .p {
+    color: #000;
+  }
+  .soporte {
+    color: #000;
+  }
+  .soporte:hover {
+    color: #8a2be2;
+  }
+}
+p {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.enlace {
+  text-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8%;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.enlace1 {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-family: "Raleway";
+}
+
+.enlace1:hover {
+  color: #000;
+  background-color: #8a2be2;
+  font-weight: bold;
+}
+
+.section .a {
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-iphone {
+  max-width: 40%;
+  height: auto;
+  transition: background-color 0.3s;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.img-iphone:hover {
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+
+.a .enlace {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #989c9c;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    font-family: Raleway;
+    font-size: 18px;
+    background-color: #000;
+  }
+  nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+  }
+  a,
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  .logoapple {
+    width: 40px;
+    height: 40px;
+  }
+  header .titulo-header,
+  header h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Raleway";
+    margin-bottom: 2px;
+    color: white;
+  }
+  header .titulo-header:hover {
+    color: #8a2be2;
+  }
+  a {
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Raleway";
+  }
+  a:hover {
+    color: #8a2be2;
+  }
+  .img-iphone {
+    height: 400px;
+    margin: 0 auto;
+  }
+  section {
+    background-color: #989c9c;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .line {
+    width: 10px;
+    height: 10px;
+  }
+  .p {
+    color: #000;
+  }
+  .soporte {
+    color: #000;
+  }
+  .soporte:hover {
+    color: #8a2be2;
+  }
+}
+p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.enlace {
+  text-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.enlace1 {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-family: "Raleway";
+}
+
+.enlace1:hover {
+  color: #000;
+  background-color: #8a2be2;
+  font-weight: bold;
+}
+
+.section .a {
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-iphone {
+  max-width: 40%;
+  height: auto;
+  transition: background-color 0.3s;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.img-iphone:hover {
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+
+.a .enlace {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #989c9c;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}/*# sourceMappingURL=style.css.map */
