@@ -136,7 +136,35 @@ footer p {
 .section__phones img {
     padding: 2vw;
     width: 30vw;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.section__phones:hover {
+    transform: scale(1.1);
+filter: brightness(0.7);
+}
+
+
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.gallery__image {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    padding: 10px;
+}
+.gallery__image:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
 
 
 @media only screen and (min-width: 1200px) {
@@ -203,7 +231,8 @@ footer p {
 
         width: 30vw;
         height: 20vw;
-        transition: transform 0.3s ease 0s, filter 0.3s ease 0s;
+        
+        transition: transform 0.3s ease, filter 0.3s ease;
     }
 
     img.section__image:hover {
@@ -228,38 +257,27 @@ footer p {
     }
 }
 
-.thumb {
-    max-width: 150px;
-    max-height: 150px;
-}
 
-.photo {
-    width: 33.33%;
-    border: 0px dotted lightgrey;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
 
-}
 
-.galery__photos {
+
+
+.gallery {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-
-.logo {
-    max-width: 100px;
-    max-height: 100px;
-    margin: 10px;
-    float: left;
+.gallery__image {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-
-
-
-.clear {
-    clear: both;
+.gallery__image:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
 }
-
 @media only screen and (max-width: 1200px) {
 
     header p {
@@ -295,7 +313,8 @@ img.section__image {
     width: 49vw;
     height: 34vw;
     border-radius: 20px;
-    transition: transform 0.3s, filter 0.3s;
+
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 img.section__image:hover {
@@ -330,36 +349,29 @@ section .section__link--info {
     color: #000;
 }
 
-.thumb {
-    max-width: 150px;
-    max-height: 150px;
-}
 
-.photo {
-    width: 33.33%;
-    border: 0px dotted lightgrey;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-}
 
-.galery__photos {
+
+
+
+
+
+.gallery {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-
-.logo {
-    max-width: 100px;
-    max-height: 100px;
-    margin: 10px;
-    float: left;
+.gallery__image {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-
-
-.clear {
-    clear: both;
+.gallery__image:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
 }
-
 
 
 
@@ -396,7 +408,8 @@ img.section__image {
     /*padding: 3vw;
     margin-top: 9px;*/
     border-radius: 20px;
-    transition: transform 0.3s, filter 0.3s;
+   
+    transition: transform 0.3s ease, filter 0.3s ease;
 
 }
 
@@ -432,37 +445,25 @@ section .section__link--info {
     color: #000;
 }
 
-.thumb {
-    max-width: 150px;
-    max-height: 150px;
-}
 
-.photo {
-    width: 33.33%;
-    border: 0px dotted lightgrey;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
 
-}
 
-.galeria__photos {
+.gallery {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-
-.logo {
-    max-width: 100px;
-    max-height: 100px;
-    margin: 10px;
-    float: left;
+.gallery__image {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-
-
-.clear {
-    clear: both;
+.gallery__image:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
 }
-
 
 
 @media only screen and (max-width: 400px) {
@@ -548,8 +549,13 @@ section .section__link--info {
     .section__phones img {
         padding: 2vw;
         width: 70vw;
+        transition: transform 0.3s ease, filter 0.3s ease;
     }
-
+    .section__phones:hover {
+        transition: transform 0.3s ease, filter 0.3s ease;
+        transform: scale(1.1);
+        filter: brightness(0.7);
+    }
 
     ol {
         display: block;
@@ -560,5 +566,21 @@ section .section__link--info {
         padding-inline-start: 10px;
     }
 
-
+    
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .gallery__image {
+        max-width: 50%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .gallery__image:hover {
+        transform: scale(1.1);
+        filter: brightness(0.7);
+    }
 }
