@@ -1,586 +1,360 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
-
 :root {
-    --primary: #fbebff;
-    --secondary: #000;
+  --primary: #fbebff;
+  --secondary: #000;
 }
 
 body {
-    font-family: Raleway;
-    font-size: 20px;
-    background-color: var(--primary);
-    margin: 0px;
+  font-family: Raleway;
+  font-size: 20px;
+  background-color: var(--primary);
+  margin: 0px;
 }
 
 nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30%;
+}
+
+a, h1 {
+  color: var(--secondary);
+  text-align: center;
+}
+
+a {
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Raleway";
+}
+
+a:hover {
+  color: #8a2be2;
+}
+
+header .header__title, header h1 {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Raleway";
+  color: var(--secondary);
+}
+header .header__title:hover {
+  color: #8a2be2;
+}
+header .header__logo {
+  width: 20px;
+  height: 20px;
+}
+header .header__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  background-color: #989c9c;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  margin: 3%;
+  width: 89%;
+  border-radius: 20px;
+}
+.section .section__line {
+  width: 10px;
+  height: 10px;
+}
+.section .section__paragraph {
+  color: var(--primary);
+  font-size: 12px;
+  text-align: center;
+}
+.section .section__link--soporte {
+  color: #000;
+}
+.section .section__link:hover {
+  color: #8a2be2;
+}
+.section .a .section__link--info, .section section__link-buy {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.section .section__links {
+  margin: 20px 0;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.section .section__link .a {
+  text-align: center;
+}
+.section .section__phones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section .section__phones img {
+  padding: 2vw;
+  width: 30vw;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.section .section__phones img:hover {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+}
+
+footer {
+  background-color: #989c9c;
+  text-align: center;
+  font-size: 11px;
+}
+footer p {
+  margin: 5px 0;
+}
+footer .footer__links {
+  margin: 5px 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.gallery .gallery__image {
+  max-width: 20%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  padding: 10px;
+}
+.gallery .gallery__image:hover {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+}
+
+@media only screen and (min-width: 1200px) {
+  header p {
+    font-size: 40px;
+  }
+  .header__logo {
+    width: 50px;
+    height: 50px;
+  }
+  header .header__title, header h1 {
+    font-weight: bold;
+    text-align: center;
+    font-family: Raleway;
+    color: var(--secondary);
+  }
+  nav .menu {
     text-align: center;
     display: flex;
     justify-content: space-between;
     margin: 0 30%;
-}
-
-a,
-h1 {
-    color: var(--secondary);
+  }
+  section .section__paragraph {
+    font-size: 15px;
     text-align: center;
-}
-
-a {
-    justify-content: center;
-    text-decoration: none;
-    font-family: "Raleway";
-}
-
-a:hover {
-    color: #8a2be2;
-}
-
-header .header__title,
-.header h1 {
-    font-weight: bold;
-    text-align: center;
-    font-family: "Raleway";
-    color: var(--secondary);
-}
-
-.header__title:hover {
-    color: #8a2be2;
-}
-
-.header__logo {
-    width: 20px;
-    height: 20px;
-}
-
-.header__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.section {
-    background-color: #989c9c;
+    color: white;
+  }
+  section .section__link--buy {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  section .section__link--info {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  section .section__link--info:hover {
+    background-color: var(--primary);
     color: #000;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  }
+  section .section__link--buy:hover {
+    background-color: var(--primary);
+    color: #000;
+  }
+  section img.section__image {
+    width: 30vw;
+    height: 20vw;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  section img.section__image:hover {
+    transform: scale(1.1);
+    filter: brightness(0.5);
+  }
+  section .section {
+    background-color: rgb(152, 156, 156);
+    color: rgb(0, 0, 0);
+    width: 89%;
     padding: 2%;
     margin: 3%;
-    width: 89%;
     border-radius: 20px;
-}
-
-.section__line {
-    width: 10px;
-    height: 10px;
-}
-
-.section__paragraph {
-    color: var(--primary);
-    font-size: 12px;
-    text-align: center;
-}
-
-.section__link--soporte {
-    color: #000;
-}
-
-.section__link:hover {
-    color: #8a2be2;
-}
-
-.a .section__link--info,
-section__link-buy {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.section__links {
-    margin: 20px 0;
-    text-align: center;
-    justify-content: space-between;
-    font-size: 12px;
-}
-
-.section__link .a {
-    text-align: center;
-}
-
-
-
-footer {
-
-    background-color: #989c9c;
-
-    text-align: center;
-    font-size: 11px;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-.footer__links {
-    margin: 5px 0;
-}
-
-.section__phones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section__phones img {
-    padding: 2vw;
-    width: 30vw;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.section__phones:hover {
-    transform: scale(1.1);
-filter: brightness(0.7);
-}
-
-
-
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.gallery__image {
-    max-width: 20%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    padding: 10px;
-}
-.gallery__image:hover {
-    transform: scale(1.1);
-    filter: brightness(0.7);
-}
-
-
-
-@media only screen and (min-width: 1200px) {
-
-    header p {
-
-        font-size: 40px;
-    }
-
-    .header__logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    header .header__title,
-    header h1 {
-        font-weight: bold;
-        text-align: center;
-        font-family: Raleway;
-        color: var(--secondary);
-    }
-
-    nav .menu {
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 30%;
-    }
-
-    section .section__paragraph {
-        font-size: 15px;
-        text-align: center;
-        color: white;
-    }
-
-    .section__link--buy {
-        margin: 0 10px;
-        padding: 10px;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-    }
-
-    .section__link--info {
-        margin: 0 10px;
-        padding: 10px;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-    }
-
-    .section__link--info:hover {
-        background-color: var(--primary);
-        color: #000;
-    }
-
-    .section__link--buy:hover {
-        background-color: var(--primary);
-        color: #000;
-    }
-
-
-    img.section__image {
-
-        width: 30vw;
-        height: 20vw;
-        
-        transition: transform 0.3s ease, filter 0.3s ease;
-    }
-
-    img.section__image:hover {
-        transform: scale(1.1);
-        filter: brightness(0.5);
-
-
-    }
-
-    section {
-        background-color: rgb(152, 156, 156);
-        color: rgb(0, 0, 0);
-
-        width: 89%;
-        padding: 2%;
-        margin: 3%;
-        border-radius: 20px;
-    }
-
-    .menu a {
-        font-size: 14px;
-    }
-}
-
-
-
-
-
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.gallery__image {
-    max-width: 20%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-.gallery__image:hover {
-    transform: scale(1.1);
-    filter: brightness(0.7);
+  }
+  .menu a {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 1200px) {
-
-    header p {
-
-        font-size: 6vw;
-    }
-
-    .header__logo {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-main {
-    margin: 3vw;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-
-a,
-h1 {
-    color: var(--secondary);
-    text-align: center;
-    font-size: 14px;
-}
-
-img.section__image {
+  header p {
+    font-size: 6vw;
+  }
+  .header__logo {
+    width: 50px;
+    height: 50px;
+  }
+  section img.section__image {
     width: 49vw;
     height: 34vw;
     border-radius: 20px;
-
     transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-img.section__image:hover {
+  }
+  section img.section__image:hover {
     transform: scale(1.1);
     filter: brightness(0.5);
-
+  }
+}
+main {
+  margin: 3vw;
 }
 
-section .section__link--info {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-
-.section__link--buy {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
+footer a, footer h1 {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 14px;
 }
-
-.section__link--info:hover {
-    background-color: var(--primary);
-    color: #000;
+footer img.section__image {
+  width: 49vw;
+  height: 34vw;
+  border-radius: 20px;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
-
-.section__link--buy:hover {
-    background-color: var(--primary);
-    color: #000;
+footer img.section__image:hover {
+  transform: scale(1.1);
+  filter: brightness(0.5);
 }
-
-
-
-
-
-
-
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+footer section .section__link--info {
+  margin: 0 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
 }
-.gallery__image {
-    max-width: 20%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease;
+footer section .section__link--info:hover {
+  background-color: var(--primary);
+  color: #000;
 }
-.gallery__image:hover {
-    transform: scale(1.1);
-    filter: brightness(0.7);
+footer .section__link--buy {
+  margin: 0 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
 }
-
-
+footer .section__link--buy:hover {
+  background-color: var(--primary);
+  color: #000;
+}
 
 @media only screen and (max-width: 767px) {
-
-    header p {
-
-        font-size: 14px;
-    }
-
-    .header__logo {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-
-footer {
+  header p {
+    font-size: 14px;
+  }
+  .header__logo {
+    width: 20px;
+    height: 20px;
+  }
+  footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-a,
-h1 {
+  }
+  a, h1 {
     color: var(--secondary);
     text-align: center;
     font-size: 14px;
-}
-
-img.section__image {
+  }
+  img.section__image {
     width: 49vw;
     height: 34vw;
-    /*padding: 3vw;
-    margin-top: 9px;*/
     border-radius: 20px;
-   
     transition: transform 0.3s ease, filter 0.3s ease;
-
-}
-
-img.section__image:hover {
+  }
+  img.section__image:hover {
     transform: scale(1.1);
     filter: brightness(0.5);
-
-}
-
-section .section__link--info {
+  }
+  section .section__link--info {
     margin: 0 10px;
     padding: 10px;
     background-color: black;
     color: white;
     border-radius: 10px;
-}
-
-.section__link--buy {
+  }
+  section .section__link--info:hover {
+    background-color: var(--primary);
+    color: #000;
+  }
+  .section__link--buy {
     margin: 0 10px;
     padding: 10px;
     background-color: black;
     color: white;
     border-radius: 10px;
-}
-
-.section__link--info:hover {
+  }
+  .section__link--buy:hover {
     background-color: var(--primary);
     color: #000;
-}
-
-.section__link--buy:hover {
-    background-color: var(--primary);
-    color: #000;
-}
-
-
-
-
-.gallery {
+  }
+  .section__phones {
+    flex-direction: column;
+  }
+  .section__phones img {
+    padding: 2vw;
+    width: 70vw;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .section__phones img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+  }
+  ol {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+  }
+  .gallery {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-}
-.gallery__image {
-    max-width: 20%;
+  }
+  .gallery .gallery__image {
+    max-width: 50%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
-}
-.gallery__image:hover {
+  }
+  .gallery .gallery__image:hover {
     transform: scale(1.1);
     filter: brightness(0.7);
-}
-
-
-@media only screen and (max-width: 400px) {
-
-    main {
-        margin: 3vw;
-    }
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .header p {
-
-        font-size: 14px;
-    }
-
-    .header__logo {
-        width: 20px;
-        height: 20px;
-    }
-
-
-    .menu a {
-        font-size: 3vw;
-    }
-
-    a,
-    h1 {
-        color: var(--secondary);
-        text-align: center;
-        font-size: 14px;
-    }
-
-    img.section__image {
-        width: 49vw;
-        height: 34vw;
-        justify-content: center;
-        padding: 3vw;
-        border-radius: 20px;
-        margin-top: 9px;
-        transition: transform 0.3s, filter 0.3s;
-    }
-
-    img.section__image:hover {
-        transform: scale(1.1);
-        filter: brightness(0.5);
-
-    }
-
-    section .section__link--info {
-        margin: 0 10px;
-        padding: 10px;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-    }
-
-    .section__link--buy {
-        margin: 0 10px;
-        padding: 10px;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-    }
-
-    .section__link--info:hover {
-        background-color: var(--primary);
-        color: #000;
-    }
-
-    .section__link--buy:hover {
-        background-color: var(--primary);
-        color: #000;
-    }
-
-    .section__phones {
-        flex-direction: column;
-    }
-
-    .section__phones img {
-        padding: 2vw;
-        width: 70vw;
-        transition: transform 0.3s ease, filter 0.3s ease;
-    }
-    .section__phones:hover {
-        transition: transform 0.3s ease, filter 0.3s ease;
-        transform: scale(1.1);
-        filter: brightness(0.7);
-    }
-
-    ol {
-        display: block;
-        margin-block-start: 0em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 10px;
-    }
-
-    
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .gallery__image {
-        max-width: 50%;
-        height: auto;
-        border-radius: 10px;
-        transition: transform 0.3s ease, filter 0.3s ease;
-    }
-    .gallery__image:hover {
-        transform: scale(1.1);
-        filter: brightness(0.7);
-    }
-}
+  }
+}/*# sourceMappingURL=style.css.map */
